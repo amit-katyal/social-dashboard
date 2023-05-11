@@ -1,6 +1,17 @@
 @use "../util" as *;
 
 .toggle {
+  border: none;
+
+  &__wrapper {
+  }
+
+  input[type="radio"] {
+  }
+
+  &__background {
+  }
+
   &__button {
     width: rem(16);
     height: rem(16);
