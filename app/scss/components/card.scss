@@ -3,8 +3,13 @@
 .card {
   background: var(--dark-card);
   color: var(--dark-text1);
+  width: rem(255); // TEMPORARY
+  padding: rem(25);
+  text-align: center;
+  border-radius: rem(5);
 
   &--facebook {
+    border-top: rem(4) solid var(--facebook);
   }
 
   &--twitter {
@@ -17,9 +22,15 @@
   }
 
   &__platform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: rem(28);
   }
 
   &__icon {
+    margin-right: rem(8);
+
     &--facebook {
     }
 
@@ -34,10 +45,23 @@
   }
 
   &__username {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+
+  &__followers {
+    margin-bottom: rem(25);
   }
 
   &__count {
+    color: var(--light-bg);
+    font-weight: 700;
+    letter-spacing: rem(-2);
+    line-height: 1;
+    margin-bottom: rem(4);
+
     &--big {
+      font-size: rem(56);
     }
 
     &--small {
@@ -45,13 +69,30 @@
   }
 
   &__label {
+    font-size: rem(12);
+    letter-spacing: rem(5);
+    font-weight: 400;
+    color: var(--dark-text1);
+    text-transform: uppercase;
   }
 
   &__change {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: rem(12);
+    font-weight: 700;
+
     &--up {
+      color: var(--limegreen);
     }
 
     &--down {
+      color: var(--brightred);
+    }
+
+    img {
+      margin-right: rem(4);
     }
   }
 }
