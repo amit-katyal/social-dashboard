@@ -51,16 +51,16 @@
     }
 
     /* REDUNDANT: Incompatible with border-radius, suited for squared corners
-
-    border-top: rem(5) solid transparent;
-    border-image: linear-gradient(
-      225deg,
-      var(--instagram-start) 0%,
-      var(--instagram-middle) 50.91%,
-      var(--instagram-end) 100%
-    );
-    border-image-slice: 1;
-    position: absolute;
+      
+      border-top: rem(5) solid transparent;
+      border-image: linear-gradient(
+        225deg,
+        var(--instagram-start) 0%,
+        var(--instagram-middle) 50.91%,
+        var(--instagram-end) 100%
+        );
+        border-image-slice: 1;
+        position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
@@ -78,6 +78,11 @@
     height: rem(20);
     margin-top: rem(5);
     margin-bottom: rem(28);
+  }
+
+  &__subtitle {
+    font-size: rem(14);
+    font-weight: 700;
   }
 
   &__icon {
@@ -117,6 +122,7 @@
     }
 
     &--small {
+      font-size: rem(32);
     }
   }
 
