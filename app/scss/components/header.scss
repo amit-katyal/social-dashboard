@@ -1,19 +1,37 @@
 @use "../util/" as *;
 
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: rem(36);
+  margin: rem(40) auto rem(40) auto;
+  display: grid;
 
-  @include breakpoint(large) {
-    justify-content: space-between;
-    align-items: center;
+  @include breakpoint(small) {
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: start;
+  }
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+  }
+
+  &__toggle {
+    align-self: center;
+    padding: rem(16) 0 0;
+
+    @include breakpoint(medium) {
+      padding: 0;
+    }
   }
 
   &__title {
     width: 100;
+    padding-bottom: rem(24);
+    border-bottom: 1px solid var(--dark-card-hover);
 
     @include breakpoint(medium) {
+      justify-self: start;
+      border-bottom: none;
+      padding-bottom: 0;
       width: auto;
     }
   }
