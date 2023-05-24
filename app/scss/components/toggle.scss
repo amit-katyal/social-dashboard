@@ -26,8 +26,8 @@
   input[type="radio"] {
     margin: 0 rem(-2) 0 rem(-2);
     opacity: 0;
-    width: rem(25);
-    height: rem(25);
+    width: rem(24);
+    height: rem(24);
 
     &:focus ~ .toggle__switcher {
       border: rem(1) solid var(--text-color1);
